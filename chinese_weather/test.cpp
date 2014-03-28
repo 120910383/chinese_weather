@@ -2,15 +2,18 @@
 #include <iostream>
 using namespace std;
 
+#include "define.h"
 #include "httpclient.h"
 #include "util.h"
+
+USING_NS_CW;
 
 const char* URL = "http://api.thinkpage.cn/v2/weather/now.json";
 const char* KEY = "SHRWBJVR30";
 size_t on_write_data(void* buffer, size_t size, size_t nmemb, void* resp);
 
 /// 测试程序
-int main(int argc, char* argv[])
+int32_t main(int32_t argc, char* argv[])
 {
 	string response;
 	string city_name = argc > 1 ? argv[1] : "shanghai";

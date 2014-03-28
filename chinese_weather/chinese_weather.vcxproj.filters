@@ -9,5 +9,6 @@
     <ClInclude Include="util.h" />
     <ClInclude Include="httpclient.h" />
     <ClInclude Include="singleton.h" />
+    <ClInclude Include="define.h" />
   </ItemGroup>
 </Project>

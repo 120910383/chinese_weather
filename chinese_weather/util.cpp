@@ -1,13 +1,17 @@
 ﻿#include "util.h"
 
+#include "define.h"
+
 #ifdef WIN32
 #include <windows.h>
 #endif
 
-int util::utf8_to_gbk(const char* str, char* out)
+NS_CW_BEGIN;
+
+int32_t util::utf8_to_gbk(const char* str, char* out)
 {
 #ifdef WIN32
-	int len = MultiByteToWideChar(CP_UTF8, 0, str, -1, nullptr, 0);
+	int32_t len = MultiByteToWideChar(CP_UTF8, 0, str, -1, nullptr, 0);
 	wchar_t* src = new wchar_t[len];
 	MultiByteToWideChar(CP_UTF8, 0, str, -1, src, len);
 
@@ -23,3 +27,5 @@ int util::utf8_to_gbk(const char* str, char* out)
 	return 0;
 #endif
 }
+
+NS_CW_END;

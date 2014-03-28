@@ -88,6 +88,7 @@ xcopy /Y /Q "$(ProjectDir)\libcurl\libs\*.dll" "$(OutDir)"</Command>
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="define.h" />
     <ClInclude Include="httpclient.h" />
     <ClInclude Include="singleton.h" />
     <ClInclude Include="util.h" />

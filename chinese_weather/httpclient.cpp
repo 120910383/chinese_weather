@@ -6,7 +6,9 @@
 #include <windows.h>
 using namespace std;
 
-int httpclient::get(const string& url, string& response)
+NS_CW_BEGIN;
+
+int32_t httpclient::get(const string& url, string& response)
 {
     CURLcode res;
     // 初始化curl并返回一个指针，后续操作都需要在该指针基础上运作
@@ -43,3 +45,5 @@ size_t httpclient::on_write_data(void* buffer, size_t size, size_t nmemb, void* 
     str->append(data, size * nmemb);
     return size * nmemb;
 }
+
+NS_CW_END;
