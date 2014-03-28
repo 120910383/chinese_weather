@@ -61,7 +61,8 @@
       <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)" xcopy /Y /Q "$(ProjectDir)\libcurl\libs\*.dll" "$(OutDir)"</Command>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)\libcurl\libs\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
