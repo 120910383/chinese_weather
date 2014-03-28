@@ -3,8 +3,11 @@
   <ItemGroup>
     <ClCompile Include="test.cpp" />
     <ClCompile Include="util.cpp" />
+    <ClCompile Include="httpclient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util.h" />
+    <ClInclude Include="httpclient.h" />
+    <ClInclude Include="singleton.h" />
   </ItemGroup>
 </Project>

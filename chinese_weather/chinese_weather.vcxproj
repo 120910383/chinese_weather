@@ -83,10 +83,13 @@ xcopy /Y /Q "$(ProjectDir)\libcurl\libs\*.dll" "$(OutDir)"</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="httpclient.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="httpclient.h" />
+    <ClInclude Include="singleton.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
