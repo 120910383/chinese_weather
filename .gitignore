@@ -15,3 +15,7 @@
 # Custom files
 /*.sdf
 /*.suo
+/Debug
+/*.opensdf
+/chinese_weather/Debug
+/chinese_weather/*.user
