@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 
-#include "../define.h"
-#include "../httpclient.h"
-#include "../util.h"
+#include "../classes/define.h"
+#include "../classes/httpclient.h"
+#include "../classes/util.h"
 
 USING_NS_CW;
 

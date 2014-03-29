@@ -2,13 +2,30 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="test.cpp" />
-    <ClCompile Include="..\httpclient.cpp" />
-    <ClCompile Include="..\util.cpp" />
+    <ClCompile Include="..\classes\httpclient.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\classes\util.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\define.h" />
-    <ClInclude Include="..\httpclient.h" />
-    <ClInclude Include="..\singleton.h" />
-    <ClInclude Include="..\util.h" />
+    <Filter Include="classes">
+      <UniqueIdentifier>{a0e3bacc-c440-4f95-81db-2322f85b839b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\classes\define.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\httpclient.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\singleton.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\util.h">
+      <Filter>classes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
