@@ -13,9 +13,9 @@
 *.a
 
 # Custom files
-/*.sdf
 /*.suo
-/Debug
+/*.sdf
 /*.opensdf
-/chinese_weather/Debug
-/chinese_weather/*.user
+/Debug
+/chinese_weather/win32/*.user
+/chinese_weather/win32/Debug
