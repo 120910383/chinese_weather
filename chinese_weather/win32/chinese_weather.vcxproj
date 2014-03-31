@@ -84,12 +84,14 @@ xcopy /Y /Q "$(ProjectDir)\..\3rdparty\libcurl\libs\*.dll" "$(OutDir)"</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\classes\httpclient.cpp" />
+    <ClCompile Include="..\classes\json.cpp" />
     <ClCompile Include="..\classes\util.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\classes\define.h" />
     <ClInclude Include="..\classes\httpclient.h" />
+    <ClInclude Include="..\classes\json.h" />
     <ClInclude Include="..\classes\singleton.h" />
     <ClInclude Include="..\classes\util.h" />
   </ItemGroup>
