@@ -33,5 +33,11 @@
     <ClInclude Include="..\classes\json.h">
       <Filter>classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\classes\city.h">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\classes\weather.h">
+      <Filter>classes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

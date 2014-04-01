@@ -89,11 +89,13 @@ xcopy /Y /Q "$(ProjectDir)\..\3rdparty\libcurl\libs\*.dll" "$(OutDir)"</Command>
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\classes\city.h" />
     <ClInclude Include="..\classes\define.h" />
     <ClInclude Include="..\classes\httpclient.h" />
     <ClInclude Include="..\classes\json.h" />
     <ClInclude Include="..\classes\singleton.h" />
     <ClInclude Include="..\classes\util.h" />
+    <ClInclude Include="..\classes\weather.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

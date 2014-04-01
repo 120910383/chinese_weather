@@ -6,6 +6,8 @@ using namespace std;
 #include "../classes/httpclient.h"
 #include "../classes/util.h"
 #include "../classes/json.h"
+#include "../classes/city.h"
+#include "../classes/weather.h"
 
 USING_NS_CW;
 
