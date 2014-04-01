@@ -32,5 +32,8 @@ typedef     int64_t                 timespan_t;
     #define     cwassert(exp)
 #endif // DEBUG || _DEBUG
 
+/// 指针删除
+#define CW_SAFE_DELETE(p)               do { if(p) { delete (p); (p) = 0; } } while(0)
+#define CW_SAFE_DELETE_ARRAY(p)         do { if(p) { delete[] (p); (p) = 0; } } while(0)
 
 #endif // __CHINESE_WEATHER__DEFINE_H_
