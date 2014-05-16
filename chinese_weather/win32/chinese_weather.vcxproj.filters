@@ -11,6 +11,9 @@
     <ClCompile Include="..\classes\json.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\classes\weather.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="classes">

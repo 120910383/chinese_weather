@@ -41,6 +41,7 @@ public:
         std::string                         en;                 // 区域英文名称
         weather::weather_t                  weather_info;       // 天气信息
         std::map<std::string, place_t>      areas;              // 子区域列表
+        place_t*                            parent;             // 父区域
     };
 
 protected:
